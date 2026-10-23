@@ -148,6 +148,10 @@ table.t td.ro{font-weight:800;color:var(--navy)}
   #canvas{box-shadow:none}
   *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
+
+/* versión web: sin contadores ni vista Tabla */
+#kpis,#vOrg,#vTab{display:none!important}
+.hd{grid-template-columns:minmax(0,1fr)}
 </style>
 </head>
 <body>
@@ -320,7 +324,7 @@ window.ORG_DATA = {
   },
   {
    "id": "dis",
-   "role": "Asociado GP & Diseño",
+   "role": "Director Diseño & Asociado GP",
    "person": "Álvaro González",
    "fullName": "Álvaro González Velasco",
    "st": "assigned",
@@ -445,7 +449,7 @@ window.ORG_DATA = {
   },
   {
    "id": "moddig",
-   "role": "Coordinador Actividad Comercial",
+   "role": "Coordinador Desarrollo de Negocio",
    "person": "Pablo Gómez de los Cobos",
    "fullName": "Pablo Gómez de los Cobos",
    "st": "assigned",
@@ -561,7 +565,7 @@ window.ORG_DATA = {
    "fullName": "Carlos García Mina Sánchez",
    "st": "assigned",
    "par": "irc",
-   "lvl": 4,
+   "lvl": 5,
    "slot": 6.5,
    "area": "GP & Diseño"
   }
@@ -1257,9 +1261,9 @@ window.ORG_DATA = {
    "alcance": "Cubre el tramo final del ciclo del proyecto y todo el posterior: pre-cierre y recepción del edificio (División Horizontal, Reglamento de Régimen Interior, Acta Final de Obra, Licencia de Primera Ocupación, commissioning, punch list y recepción interna), la entrega al administrador de fincas y a los clientes finales con el Libro del Edificio, el presupuesto de comunidad y el fondo de reserva, y después la postventa: incidencias, garantías LOE, mantenimiento correctivo y relación con la comunidad hasta el cierre formal de garantías. Recibe la obra de los Gerentes de Proyectos y reporta al Director de Proyectos y Postventa."
   },
   "dis": {
-   "role": "Asociado GP & Diseño",
+   "role": "Director Diseño & Asociado GP",
    "dept": "GP & Diseño",
-   "mission": "Asociado GP & Diseño de Be Grand España, responsable del área de GP & Diseño. Dirige las dos mitades del ciclo de inversión y responde de ambas ante Presidencia y el Director Corporativo: la entrada —originación, análisis, estructuración de la operación, entrada de socios y montaje de la deuda, que ejecuta Estructuración & Adquisiciones— y la vida del activo —modelo, pricing, seguimiento, modificaciones y salida, que ejecuta Portafolio—. Es quien conecta las dos cosas que en esta casa no pueden ir separadas: la decisión de producto y el retorno del proyecto. Dirige el equipo de GP & Diseño: Gerente Diseño, Portafolio, Estructuración & Adquisiciones, Analista Jr GP (Deal Sourcing) e Intern GP. Además, y con el mismo peso, mantiene la responsabilidad directa del diseño del producto: Basado en Madrid, el Asociado GP & Diseño lidera la conceptualización, desarrollo técnico y coordinación integral del diseño arquitectónico de los proyectos de Be Grand España, actuando como responsable del producto inmobiliario desde su definición estratégica hasta la consolidación del Design Document, que servirá como base técnica del proyecto. En coordinación directa con Presidencia, participa en la definición del concepto arquitectónico, el posicionamiento del producto, el programa de áreas, el mix de tipologías, el nivel de acabados y los criterios de diseño orientados a maximizar el valor del activo y el retorno del proyecto. Como eje técnico del producto, dirige y coordina a los arquitectos y consultores externos (arquitectura,  interiorismo, paisajismo y otras disciplinas técnicas), garantizando la correcta integración multidisciplinaria del diseño desde el Anteproyecto hasta el Proyecto de Ejecución, asegurándose de la entrega oportuna de los mismos al área de Proyectos. Asimismo, se ocupará de coordinar y entregar la documentación As-Built. Asimismo, gestiona la tramitación necesaria para la obtención de la Licencia de Obra Mayor y ejerce control formal sobre cualquier cambio de diseño. Actúa como único punto de contacto técnico entre la promotora y los consultores externos, proporcionando además soporte técnico a la preventa y colaborando en la definición del equipamiento y modelo operativo del edificio.",
+   "mission": "Director Diseño & Asociado GP de Be Grand España, responsable del área de GP & Diseño. Dirige las dos mitades del ciclo de inversión y responde de ambas ante Presidencia y el Director Corporativo: la entrada —originación, análisis, estructuración de la operación, entrada de socios y montaje de la deuda, que ejecuta Estructuración & Adquisiciones— y la vida del activo —modelo, pricing, seguimiento, modificaciones y salida, que ejecuta Portafolio—. Es quien conecta las dos cosas que en esta casa no pueden ir separadas: la decisión de producto y el retorno del proyecto. Dirige el equipo de GP & Diseño: Gerente Diseño, Portafolio, Estructuración & Adquisiciones, Analista Jr GP (Deal Sourcing) e Intern GP. Además, y con el mismo peso, mantiene la responsabilidad directa del diseño del producto: Basado en Madrid, el Director Diseño & Asociado GP lidera la conceptualización, desarrollo técnico y coordinación integral del diseño arquitectónico de los proyectos de Be Grand España, actuando como responsable del producto inmobiliario desde su definición estratégica hasta la consolidación del Design Document, que servirá como base técnica del proyecto. En coordinación directa con Presidencia, participa en la definición del concepto arquitectónico, el posicionamiento del producto, el programa de áreas, el mix de tipologías, el nivel de acabados y los criterios de diseño orientados a maximizar el valor del activo y el retorno del proyecto. Como eje técnico del producto, dirige y coordina a los arquitectos y consultores externos (arquitectura,  interiorismo, paisajismo y otras disciplinas técnicas), garantizando la correcta integración multidisciplinaria del diseño desde el Anteproyecto hasta el Proyecto de Ejecución, asegurándose de la entrega oportuna de los mismos al área de Proyectos. Asimismo, se ocupará de coordinar y entregar la documentación As-Built. Asimismo, gestiona la tramitación necesaria para la obtención de la Licencia de Obra Mayor y ejerce control formal sobre cualquier cambio de diseño. Actúa como único punto de contacto técnico entre la promotora y los consultores externos, proporcionando además soporte técnico a la preventa y colaborando en la definición del equipamiento y modelo operativo del edificio.",
    "groups": [
     {
      "t": "Dirección del área y de su equipo",
@@ -1498,7 +1502,7 @@ window.ORG_DATA = {
      ]
     }
    ],
-   "alcance": "El alcance del puesto tiene dos mitades. La primera es la dirección del ciclo de inversión completo: tesis y criterios de inversión, supervisión de la originación y del pipeline, validación del underwriting, de la estructura societaria y fiscal, del acuerdo con socios y de la estructura de deuda; y, del lado del activo ya en propiedad, la responsabilidad sobre el comportamiento del portafolio, la validación de la lista de precios, la aprobación de modificaciones y reestructuraciones y la decisión de la estrategia de salida. Incluye la dirección de su equipo —Gerente Diseño, Portafolio, Estructuración & Adquisiciones, Analista Jr GP (Deal Sourcing) e Intern GP— y la representación del área ante Presidencia, el Director Corporativo, el Sr Management de México y el Consejo de Be Grand. La ejecución operativa de cada vertical es de sus responsables: él fija criterio, valida y decide. La segunda mitad es la responsabilidad directa sobre el diseño y el producto, cuya ejecución operativa recae en la Gerente Diseño y cuyo alcance se describe a continuación: El puesto abarca la dirección completa del proceso de diseño del proyecto, desde el análisis urbanístico y normativo del activo bajo el planeamiento vigente hasta la consolidación de la documentación final del proyecto, incluyendo planos As-Built y el Libro del Edificio. Durante las fases iniciales del desarrollo, el Asociado GP & Diseño reporta directamente con Presidencia en la definición y validación del producto inmobiliario, incluyendo el concepto arquitectónico, las tipologías de vivienda, el programa de amenidades, el nivel de acabados y los criterios que conformarán el Design Document. Dentro de su alcance se incluye la coordinación técnica de todos los consultores externos, la dirección del proceso de diseño en sus distintas fases —Anteproyecto, Proyecto Básico (visado COAM) y Proyecto de Ejecución— y la gestión de la tramitación de la Licencia de Obra Mayor ante el Ayuntamiento de Madrid y los organismos sectoriales correspondientes. Asimismo, es responsable del seguimiento y control de los cambios técnicos del proyecto, cuya aprobación deberá realizarse conjuntamente con Presidencia y, cuando tengan impacto en coste o ejecución, en coordinación con el Responsable de Proyectos. Finalmente, participa en la definición del equipamiento, contribuyendo a asegurar, junto con el área de Proyectos, la correcta puesta en funcionamiento del activo y su entrega plenamente operativa."
+   "alcance": "El alcance del puesto tiene dos mitades. La primera es la dirección del ciclo de inversión completo: tesis y criterios de inversión, supervisión de la originación y del pipeline, validación del underwriting, de la estructura societaria y fiscal, del acuerdo con socios y de la estructura de deuda; y, del lado del activo ya en propiedad, la responsabilidad sobre el comportamiento del portafolio, la validación de la lista de precios, la aprobación de modificaciones y reestructuraciones y la decisión de la estrategia de salida. Incluye la dirección de su equipo —Gerente Diseño, Portafolio, Estructuración & Adquisiciones, Analista Jr GP (Deal Sourcing) e Intern GP— y la representación del área ante Presidencia, el Director Corporativo, el Sr Management de México y el Consejo de Be Grand. La ejecución operativa de cada vertical es de sus responsables: él fija criterio, valida y decide. La segunda mitad es la responsabilidad directa sobre el diseño y el producto, cuya ejecución operativa recae en la Gerente Diseño y cuyo alcance se describe a continuación: El puesto abarca la dirección completa del proceso de diseño del proyecto, desde el análisis urbanístico y normativo del activo bajo el planeamiento vigente hasta la consolidación de la documentación final del proyecto, incluyendo planos As-Built y el Libro del Edificio. Durante las fases iniciales del desarrollo, el Director Diseño & Asociado GP reporta directamente con Presidencia en la definición y validación del producto inmobiliario, incluyendo el concepto arquitectónico, las tipologías de vivienda, el programa de amenidades, el nivel de acabados y los criterios que conformarán el Design Document. Dentro de su alcance se incluye la coordinación técnica de todos los consultores externos, la dirección del proceso de diseño en sus distintas fases —Anteproyecto, Proyecto Básico (visado COAM) y Proyecto de Ejecución— y la gestión de la tramitación de la Licencia de Obra Mayor ante el Ayuntamiento de Madrid y los organismos sectoriales correspondientes. Asimismo, es responsable del seguimiento y control de los cambios técnicos del proyecto, cuya aprobación deberá realizarse conjuntamente con Presidencia y, cuando tengan impacto en coste o ejecución, en coordinación con el Responsable de Proyectos. Finalmente, participa en la definición del equipamiento, contribuyendo a asegurar, junto con el área de Proyectos, la correcta puesta en funcionamiento del activo y su entrega plenamente operativa."
   },
   "dsgn": {
    "role": "Gerente Diseño",
@@ -3059,7 +3063,7 @@ window.ORG_DATA = {
      ]
     }
    ],
-   "alcance": "Puesto de ejecución bajo Dirección Comercial. Cubre la producción de materiales y creatividades de venta, la organización de eventos y activaciones, el cuidado de los puntos de contacto de la experiencia de cliente y el soporte de contenidos y redes. Todo lo que produce se valida en Dirección Comercial antes de salir al mercado. Es la contraparte de ejecución de los bloques de marketing, eventos y sensibilidad comercial que la Dirección Comercial supervisa. Los Agentes BDC cuelgan de este puesto, en línea compartida con Coordinador Actividad Comercial."
+   "alcance": "Puesto de ejecución bajo Dirección Comercial. Cubre la producción de materiales y creatividades de venta, la organización de eventos y activaciones, el cuidado de los puntos de contacto de la experiencia de cliente y el soporte de contenidos y redes. Todo lo que produce se valida en Dirección Comercial antes de salir al mercado. Es la contraparte de ejecución de los bloques de marketing, eventos y sensibilidad comercial que la Dirección Comercial supervisa. Los Agentes BDC cuelgan de este puesto, en línea compartida con Coordinador Desarrollo de Negocio."
   },
   "fo": {
    "role": "Gerente Patrimonial",
@@ -3284,10 +3288,10 @@ window.ORG_DATA = {
      ]
     }
    ],
-   "alcance": "Primer contacto telefónico y digital con el lead. Su ámbito empieza cuando entra el lead y termina cuando la cita está celebrada y su feedback recogido y registrado. Cuelga de Auxiliar Marketing y de Coordinador Actividad Comercial, que comparten la dirección del equipo BDC: speech, cadencias, automatización y medición."
+   "alcance": "Primer contacto telefónico y digital con el lead. Su ámbito empieza cuando entra el lead y termina cuando la cita está celebrada y su feedback recogido y registrado. Cuelga de Auxiliar Marketing y de Coordinador Desarrollo de Negocio, que comparten la dirección del equipo BDC: speech, cadencias, automatización y medición."
   },
   "moddig": {
-   "role": "Coordinador Actividad Comercial",
+   "role": "Coordinador Desarrollo de Negocio",
    "dept": "Comercial",
    "mission": "Responsable del desarrollo de negocio de Be Grand España. Abre y sostiene los canales por los que entra la demanda, construye la lectura de mercado y de competencia sobre la que se apoyan las decisiones comerciales, y prepara el go-to-market de cada promoción antes de que salga a la venta. Reporta a Dirección Comercial y comparte con Auxiliar Marketing la dirección del equipo de BDC.",
    "groups": [
@@ -3640,7 +3644,7 @@ window.ORG_DATA = {
    "req": "Buena presencia, orientación a cliente y experiencia en eventos. Con 1 año de experiencia es suficiente.",
    "hours": "L-V de 10:00 a 20:00, con 2 horas para comer."
   },
-  "Coordinador Actividad Comercial": {
+  "Coordinador Desarrollo de Negocio": {
    "req": "1 año de experiencia. Formalización en digitalización y project management.",
    "hours": "L-V de 10:00 a 20:00, con 2 horas para comer."
   },
@@ -3696,7 +3700,7 @@ window.ORG_DATA = {
    "req": "Puede ser arquitecto o ingeniero.",
    "hours": ""
   },
-  "Asociado GP & Diseño": {
+  "Director Diseño & Asociado GP": {
    "req": "Arquitectura, máster en Real Estate, 4 años de experiencia y grandes capacidades numéricas.",
    "hours": "L-J de 10:00 a 21:00 con 1 hora para comer + V de 10:00 a 16:00 con 1 hora para comer."
   }
